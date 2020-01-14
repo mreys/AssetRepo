@@ -1,4 +1,4 @@
-# webmethods-sample-project-layout
+# webMethods Microservices Runtime
 Sample project for deploying microservices with webMethods Microservices Runeime. This sample also demostrates CI quick set up together with https://github.com/SoftwareAG/sagdevops-ci-assets
 
 ## Jump Start with webMethods Structure
