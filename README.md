@@ -9,9 +9,21 @@ The best way to start your webMethods project would be to fork this repo directl
 This sample webMethods project layout should serve as a template for organising webMethods projects. It contains demo Integration Server packages with flow services and wM Unit Tests that are covering those.
 Fork the repository to easily create fundament for you webMethods project.
 
-## CI (continuous integration)
+## Where to start 
 
-Jenkinsfiles.win and Jenkinfiles.unix in the root of the project contain Jenkins Pipeline declaration. With these and our [DevOps asset library for version 9.x and 10.0](https://github.com/SoftwareAG/sagdevops-ci-assets) you will be able to set up you CI in a matter of minutes.
+Components used here:
+Jenkins
+Docker installed and running
+Microservices Runtime installed
+Consul installed
+
+There are a number of files that are Jenkins pipelines. 
+1. Creating a base image for the MSR and upload to a docker.io registry (private registries will require tweaking of some files in the MSR directory structure)
+2. Creating a MSR image with package Customer included, upload to docker.io registry
+3. Creating a MSR image with Employee package included, upload to docker.io registry
+4. Deploy to K8S (Rancher used, but scritps can easily be tweaked to work with vanilla K8S)
+
+
   ______________________
 These tools are provided as-is and without warranty or support. They do not constitute part of the Software AG product suite. Users are free to use, fork and modify them, subject to the license agreement. While Software AG welcomes contributions, we cannot guarantee to include every contribution in the master project.	
 
