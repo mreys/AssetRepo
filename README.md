@@ -1,23 +1,19 @@
 # webmethods-sample-project-layout
-Sample project layout for webMethods assets. This sample also demostrates CI quick set up together with https://github.com/SoftwareAG/sagdevops-ci-assets
+Sample project for deploying microservices with webMethods Microservices Runeime. This sample also demostrates CI quick set up together with https://github.com/SoftwareAG/sagdevops-ci-assets
 
 ## Jump Start with webMethods Structure
 The best way to start your webMethods project would be to fork this repo directly in github. This will allow you to directly have a set-up copy of layout that will be completely under your control.
 
-## Description
-
-This sample webMethods project layout should serve as a template for organising webMethods projects. It contains demo Integration Server packages with flow services and wM Unit Tests that are covering those.
-Fork the repository to easily create fundament for you webMethods project.
-
-## Where to start 
+## Where to start?
 
 Components used here:
-Jenkins
+Jenkins 
 Docker installed and running
 Microservices Runtime installed
 Consul installed
 
-There are a number of files that are Jenkins pipelines. 
+There are a number of files that are Jenkins pipelines. Even if you don't know Jenkins, these are human readable files and will give you some insight into the different commands that are executed. 
+You can then use these as examples for your own favourite CI/CD tooling (vagrant, Ansible, Chef, Puppet, Terraform,...)
 1. Creating a base image for the MSR and upload to a docker.io registry (private registries will require tweaking of some files in the MSR directory structure)
 2. Creating a MSR image with package Customer included, upload to docker.io registry
 3. Creating a MSR image with Employee package included, upload to docker.io registry
