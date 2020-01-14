@@ -7,10 +7,10 @@ The best way to start your webMethods project would be to fork this repo directl
 ## Where to start?
 
 Components used here:
-Jenkins 
-Docker installed and running
-Microservices Runtime installed
-Consul installed
+* Jenkins 
+* Docker installed and running
+* Microservices Runtime installed
+* Consul installed
 
 There are a number of files that are Jenkins pipelines. Even if you don't know Jenkins, these are human readable files and will give you some insight into the different commands that are executed. 
 You can then use these as examples for your own favourite CI/CD tooling (vagrant, Ansible, Chef, Puppet, Terraform,...)
